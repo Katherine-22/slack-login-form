@@ -42,3 +42,15 @@ changeLangLink.addEventListener("click", (evt) => {
     document.body.style.overflow = "hidden";
   }
 });
+
+window.addEventListener("click", (e) => {
+  if (
+    !langBox.contains(e.target) &&
+    !changeLangLink.contains(e.target) &&
+    container.hasAttribute("data-overlay")
+  ) {
+    document.body.style.overflow = "visible";
+    container.removeAttribute("data-overlay");
+    langBox.classList.remove("visible");
+  }
+});
