@@ -20,3 +20,25 @@ function validateEmail(input) {
     return true;
   }
 }
+
+//Page Language Box
+const langBox = document.querySelector(".regional");
+const changeLangLink = document.querySelector(".region-change");
+const main = document.querySelector("main");
+const container = document.querySelector(".signup_form_container");
+
+const mainBottom = main.getBoundingClientRect().bottom;
+const langLinkY = changeLangLink.getBoundingClientRect().top;
+
+langBox.style.bottom = `${mainBottom - langLinkY}px`;
+
+changeLangLink.addEventListener("click", (evt) => {
+  evt.preventDefault();
+
+  langBox.classList.toggle("visible");
+  container.toggleAttribute("data-overlay");
+
+  if (container.hasAttribute("data-overlay")) {
+    document.body.style.overflow = "hidden";
+  }
+});
