@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/36650b7c30.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="slack_form.css" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <title>Slack | Login</title>
+  </head>
+  <body>
+    <div class="signup_form_container">
+      <header>
+        <a href="https://slack.com">
+          <img src="img/slack_logo.svg" alt="" height="26" />
+        </a>
+      </header>
+      <main>
+        <h1 class="page_heading">First, enter your email</h1>
+        <p class="page_subheading">
+          We suggest using the
+          <strong>email address you use at work.</strong>
+        </p>
+        <form action="#" id="signup_form" class="signup_form">
+          <div class="input-field-group">
+            <label for="user_email"></label>
+            <input
+              type="text"
+              name="email"
+              id="user_email"
+              placeholder="name@work-email.com"
+              class="box-shadow"
+              required
+            />
+            <div class="email_error">
+              <i class="fa-solid fa-circle-info"></i>
+
+              <span> It looks like that isn't a valid email address.</span>
+            </div>
+          </div>
+          <button type="submit" class="btn btn_submit box-shadow">
+            Continue
+          </button>
+          <div class="horizontal_rule">
+            <hr class="horizontal_rule_left" />
+            <p class="horizontal_rule_content">OR</p>
+            <hr class="horizontal_rule_right" />
+          </div>
+          <button type="button" class="btn google_signup_btn box-shadow">
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 48 48"
+              class="google_signup_icon"
+            >
+              <g>
+                <path
+                  fill="#EA4335"
+                  d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"
+                ></path>
+                <path
+                  fill="#4285F4"
+                  d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"
+                ></path>
+                <path
+                  fill="#FBBC05"
+                  d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"
+                ></path>
+                <path
+                  fill="#34A853"
+                  d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"
+                ></path>
+                <path fill="none" d="M0 0h48v48H0z"></path>
+              </g>
+            </svg>
+            <span>Continue With Google</span>
+          </button>
+          <a href="#" class="btn apple_signup_btn box-shadow">
+            <i class="fa-brands fa-apple"></i>
+            <span>Continue With Apple</span>
+          </a>
+
+          <div class="signup_excisting">
+            <p>Already using Slack?</p>
+            <a href="#">Sign in to an existing workspace</a>
+          </div>
+        </form>
+        <footer>
+          <a href="#">Privacy & Terms</a>
+          <a href="#">Contact Us</a>
+          <div class="region-change">
+            <i class="fa-solid fa-globe"></i>
+            <span>Change Region</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+        </footer>
+        <div class="regional">
+          <p class="bold rg_heading">Change region</p>
+          <p class="rg_description">
+            Selecting a different region will change the language and content of
+            Slack.com.
+          </p>
+          <div class="lang_links d-flex">
+            <div class="d-flex">
+              <p class="bold">Americas</p>
+              <a href="#">Latinoamérica (Español)</a>
+              <a href="#">Brasil (Português)</a>
+              <a href="#">United States (English)</a>
+            </div>
+
+            <div class="d-flex">
+              <p class="bold">Europe</p>
+              <a href="#">Deutschland (Deutsch)</a>
+              <a href="#">España (Español)</a>
+              <a href="#">France (Français)</a>
+              <a href="#">Italia (italiano)</a>
+              <a href="#">United Kingdom (English)</a>
+            </div>
+
+            <div class="d-flex">
+              <p class="bold">Asia Pacific</p>
+              <a href="#">简体中文</a>
+              <a href="#">繁體中文</a>
+              <a href="#">India (English)</a>
+              <a href="#">日本 (日本語)</a>
+              <a href="#">한국어</a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="slack_form.js"></script>
+  </body>
+</html>
